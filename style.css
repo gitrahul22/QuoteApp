@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color: #ffe0e5;
+}
+.qapp{
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    text-align: center;
+    box-shadow: 1px 1px 8px #813440c2;
+    border-radius: 20px; 
+}
+
+
+.qapp  h2{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 32px;
+  margin-bottom: 40px  ;
+  position:relative;
+}
+.qapp h2::after{
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background:rgb(23,124,229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);  
+}
+.qapp blockquote::before, .qapp blockquote::after{
+    content: '"';
+}
+.qapp span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;  
+}
+.qapp span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.qapp div{
+      width: 100%;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+}
+.qapp button{
+    background:rgb(23,124,229);
+    color:#fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.8s ease;
+}
+#share{
+    margin: 7px;
+}
+.qapp button:nth-child(1):active{
+    transform: scale(0.05);
+}
+.qapp button:nth-child(2){
+    background:transparent;
+    border: 2px solid rgb(23,124,229);
+    color:rgb(23,124,229);
+    cursor: pointer;
+}
